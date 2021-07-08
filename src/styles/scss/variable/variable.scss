@@ -1,0 +1,136 @@
+//основные цвета
+$colMain: #161d26;
+$colMTwo: #1f2935;
+
+//доп цвета
+$colOther: #8540ff;
+$colOtherShadow: rgba(134, 64, 255, 0.2);
+$colOThree: #ffc50c;
+$colOThreeShadow: rgba(255, 187, 1, 0.2);
+$colOFive: #ec407a;
+$colOFiveShadow: rgba(245, 39, 108, 0.2);
+$colOSeven: #ff6331;
+$colOSevenShadow: rgba(255, 86, 35, 0.2);
+$colONine: #13b6ff;
+$colONineShadow: rgba(3, 170, 248, 0.2);
+$colOEleven: #49af46;
+$colOElevenShadow: rgba(74, 184, 70, 0.2);
+
+$colInputShadow: rgba(64, 177, 206, 0.4);
+
+//цвета шрифтов
+$colFontMain: #0abead;
+$colFontMainTwo: #95a5c6;
+$colFontMainThree: #7987a2;
+$colFontOther: #ffffff;
+$colFontOtherTwo: #f57f17;
+
+//цвета кнопок
+$colButtonMain: #09bcab;
+$colButtonMainShadow: rgba(9, 188, 170, 0.4);
+$colButtonMainTwo: #f57f17;
+$colButtonMainTwoShadow: rgba(245, 127, 23, 0.4);
+$colButtonOther: #803afb;
+$colButtonOtherShadow: rgba(128, 58, 251, 0.4);
+$colButtonOtherTwo: #f5276c;
+$colButtonOtherTwoShadow: rgba(245, 39, 108, 0.4);
+$colButtonOtherThree: #ff6331;
+$colButtonOtherThreeShadow: rgba(255, 86, 35, 0.4);
+
+//подсветка фокуса
+$colInputFocus: #1ef80a;
+$colFocus: #ff009c;
+
+
+$maxWidth: 1200;
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin button ($fSPc, $fSMob, $col, $colBg, $padd...){
+  display: inline-block;
+  text-decoration: none;
+  // font-size: $fS;
+  @include adaptiv-font($fSPc, $fSMob);
+  color: $col;
+  background-color: $colBg;
+  padding: $padd;
+  @content;
+}
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 2px solid $colFocus;
+}
+.img-responsive {
+  // display: inline-block;
+  // max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+// фикс лишних 4х пикселей снизу обертки(к img)
+.imgWrapper {
+  line-height: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: $colFontMainTwo;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media (max-width:767px) {
+    .mainSubheading {
+      &:after {
+        width: 200px;
+      }
+    }
+  }
+  @media (min-width:1200px) {
+    .mainHeading {
+      font-size: 48px;
+    }
+    .mainSubheading {
+      font-size: 16px;
+    }
+  }
+}
+.mainHeading {
+  @include adaptiv-font(48, 28);
+  font-weight: 700;
+  color: $colFontMain;
+}
+.mainSubheading {
+  margin: 0 15px;
+  @include adaptiv-font(16, 14);
+  letter-spacing: 4px;
+  &:after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 11px;
+    margin: 23px auto 0;
+
+    background-image: url('../../assets/Images/ikon/Rectangle\ 416№2.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  line-height: 1.6;
+}

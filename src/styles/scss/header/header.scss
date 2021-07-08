@@ -1,0 +1,105 @@
+header {
+  width: 100%;
+  background-color: $colMTwo;
+  nav {
+    position: relative;
+    max-width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    .logo {
+      margin: 0 15px;
+      img {
+        position: center;
+        // height: 57px;
+        // width: 167px;
+        margin: 45px auto;
+    }
+    }
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 15px;
+      @media (max-width:992px) {
+        display: none;
+      }
+      li {
+        list-style-type: none;
+        display: inline-block;
+        a {
+          // font-family: 'Poppins';
+          font-weight: 500;
+          display: inline-block;
+          text-decoration: none;
+          color: $colFontMainTwo;
+          font-size: 16px;
+          padding: 10px 20px;
+          border: 2px solid transparent;
+          // border-radius: 5px;
+          margin: 10px 0;
+          transition: .2s;
+          &:hover {
+            color: $colFontMain;
+            // border: 2px solid $colFontMain;
+          }
+        }
+      }
+    }
+  }
+  // Выпадашка
+  .wrapperMob {
+    display: none;
+    // line-height: 0;
+    position: relative;
+    margin: 0 15px;
+    @media (max-width:992px) {
+      display: inline-block;
+    }
+    svg {
+      height: 45px;
+      width: 45px;
+      transition: .2s;
+      fill: $colFontMain;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .ulMob {
+      width: 280px;
+      padding: 10px 0;
+      display: none;
+      li {
+        a {
+          padding: 15px 20px;
+          font-size: 20px;
+        }
+      }
+    }
+    &:hover .ulMob {
+      display: inline-block;
+      position: absolute;
+      top: 40px;
+      right: -20px;
+      // z-index: 2;
+      display: flex;
+      flex-flow: column nowrap;
+      background-color: $colMain;
+      border: 2px solid $colFontMain;
+      border-radius: 5px;
+    }
+  }
+  @media (max-width:575px) {
+    nav {
+      .logo {
+        width: 132px;
+        img {
+          margin: 20px auto;
+        }
+      }
+    }
+  }
+}

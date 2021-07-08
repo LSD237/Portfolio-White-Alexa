@@ -1,0 +1,669 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Portfolio White Alexa'
+  - var pageClass = 'index-page'
+
+block content
+  main
+    // секция home
+    section.section-home#Home
+      .container
+        .blockWithContentHome
+          h2
+            | Hello, IM 
+            span White Alexa
+          h1 Creative Designer
+          p Freelancer Web/ Mobile UI/UX Designer with Motion Graphics
+          .WrapperButtonsHome
+            a(href='' rel='details') Hire Me
+            a.bottonOrange(href='' rel='details') Get Resume
+        .blockWithPhoto
+          .happyYoungManPointingFingerAside.imgWrapper
+    // / секция home
+    
+    // секция about
+    section.section-about#Abou
+      .container
+        h2.mainHeading About Us
+        p.mainSubheading Why Choose Me?
+        .wrapperAboutBlock
+          .corporateManHoldingIpadMediumShot.imgWrapper.ItemWrapperAboutBlock
+          .blockWithContentAbout.ItemWrapperAboutBlock
+            h3 Why Choose me ?
+            p
+              | Lorem ipsum, or lipsum as it is sometimes known, is dummy text 
+              | used in laying out print, graphic or web designs. The passage is 
+              | attributed to an unknown typesetter in the 15th century who is 
+              | thought to have scrambled parts of Cicero's De Finibus Bonorum 
+              | et Malorum for use in a type specimen book.
+            h4 Here is Few Features:
+            .wrapperUlAbout
+              ul
+                li User Interface Design
+                li User Experience Design
+                li Visual  Commination Design
+                li Interaction Design
+                li Supper Support
+            .WrapperButtonsAbout
+              a(href='' rel='details') Hire Me
+              a.bottonOrange(href='' rel='details') Get Resume
+    // / секция about
+    
+    // секция services
+    section.section-services#Serv
+      .container
+        h2.mainHeading Services
+        p.mainSubheading What We Provide You ?
+        .wrapperServicesBlock
+          .webDesing.servicesItem
+            .iconWebDesign.iconServices
+            h3 Web Design
+            p
+              | Lipsum as it is sometimes known
+              | is dummy text used in laying out print,
+              | graphic or web designs.
+          .interfaceDesign.servicesItem
+            .iconInterfaceDesign.iconServices
+            h3 Interface Design
+            p
+              | Lipsum as it is sometimes known
+              | is dummy text used in laying out print,
+              | graphic or web designs.
+          .webDevelopment.servicesItem
+            .iconWebDevelopment.iconServices
+            h3 Web Development
+            p
+              | Lipsum as it is sometimes known
+              | is dummy text used in laying out print,
+              | graphic or web designs.
+          .uxDesign.servicesItem
+            .iconUxDesign.iconServices
+            h3 UX Design
+            p
+              | Lipsum as it is sometimes known
+              | is dummy text used in laying out print,
+              | graphic or web designs.
+          .motionGraphic.servicesItem
+            .iconMotionGraphic.iconServices
+            h3 Motion Graphic
+            p
+              | Lipsum as it is sometimes known
+              | is dummy text used in laying out print,
+              | graphic or web designs.
+          .seoOptimize.servicesItem
+            .iconSeoOptimize.iconServices
+            h3 SEO Optimize
+            p
+              | Lipsum as it is sometimes known
+              | is dummy text used in laying out print,
+              | graphic or web designs.
+    // / секция services
+
+    // секция resume
+    section.section-resume#Resu
+      .container
+        h2.mainHeading Resume
+        p.mainSubheading My formal Bio Details
+        .wrapperResumeBlock
+          .resumeBlockItem.tabMenu
+            .wrapperTabMenu
+              #resume1.iconEducation.iPosition._active
+                h3 Education
+                .itemMask
+              #resume2.iconWorkHistory.iPosition
+                h3 Work History
+                .itemMask
+              #resume3.iconProgrammingSkill.iPosition
+                h3 Programming Skill
+                .itemMask
+              #resume4.iconDesignerSkills.iPosition
+                h3 Designer Skills
+                .itemMask
+              #resume5.iconSeoSkills.iPosition
+                h3 SEO Skills
+                .itemMask
+              .stripMask
+          .resumeBlockItem.listOfEventsWithDescriptionAndDatesResume
+            .maskForList
+            #resume1_1.wrapperlistOfEvents 
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Envato University
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Envato University
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Envato University
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Four block
+                  .dateOfEvents 2010-2021
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+            #resume2_2.wrapperlistOfEventsTwo 
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Work History
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Work History
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Work History
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Four block
+                  .dateOfEvents 2010-2021
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+            #resume3_3.wrapperlistOfEventsThree 
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Programming Skill
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Programming Skill
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Programming Skill
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Four block
+                  .dateOfEvents 2010-2021
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+            #resume4_4.wrapperlistOfEventsFour 
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Designer Skills
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Designer Skills
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Designer Skills
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Four block
+                  .dateOfEvents 2010-2021
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+            #resume5_5.wrapperlistOfEventsFive 
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 SEO Skills
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 SEO Skills
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 SEO Skills
+                  .dateOfEvents 2010-2014
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+              .itemlistOfEvents
+                .wrapperItemHeaders
+                  h3 Four block
+                  .dateOfEvents 2010-2021
+                h4 B.sc in Computer Engineer
+                p
+                  | Reference site about Lorem Ipsum, giving information on its origins, as well as a 
+                  | random Lipsum generator.
+
+    // / секция resume
+    
+    // секция portfolio
+    section.section-portfolio#Port
+      .container#containerPortfolio
+        h2.mainHeading Portfolio
+        p.mainSubheading Check in Our Latest Works
+        ul#ulPortfolio
+          li#portfolioLiOne._activeLiPortfolio All Work
+          li#portfolioLiTwo Illustration
+          li#portfolioLiThree Animation
+          li#portfolioLiFour App UI
+          li#portfolioLiFive Web UI
+          li#portfolioLiSix Social Media
+          li#portfolioLiSeven Print Design
+        // слайдер на css
+        .slidersContainer#slidersContainerPortfolio
+          .slider_mob.portfolioSliderMobOne._activeSliderMobPortfolio
+            .slider__container
+              .slider__wrapper
+                .slider__items
+                  .slider__item
+                    // Контент 1 слайда
+                    .mobImg.mobImgFirst
+                  .slider__item
+                    // Контент 2 слайда
+                    .mobImg.mobImgTwo
+                  .slider__item
+                    // Контент 3 слайда
+                    .mobImg.mobImgThree
+            // Кнопки для перехода к предыдущему и следующему слайду
+            a.slider__control(href='#' data-slide='prev')
+            a.slider__control(href='#' data-slide='next')
+          .slider_mob.portfolioSliderMobTwo
+            .slider__container
+              .slider__wrapper
+                .slider__items
+                  .slider__item
+                    // Контент 1 слайда
+                    .mobImg.mobImgFirst
+                  .slider__item
+                    // Контент 2 слайда
+                    .mobImg.mobImgTwo
+                  .slider__item
+                    // Контент 3 слайда
+                    .mobImg.mobImgThree
+            // Кнопки для перехода к предыдущему и следующему слайду
+            a.slider__control(href='#' data-slide='prev')
+            a.slider__control(href='#' data-slide='next')
+          .slider_mob.portfolioSliderMobThree
+            .slider__container
+              .slider__wrapper
+                .slider__items
+                  .slider__item
+                    // Контент 1 слайда
+                    .mobImg.mobImgFirst
+                  .slider__item
+                    // Контент 2 слайда
+                    .mobImg.mobImgTwo
+                  .slider__item
+                    // Контент 3 слайда
+                    .mobImg.mobImgThree
+            // Кнопки для перехода к предыдущему и следующему слайду
+            a.slider__control(href='#' data-slide='prev')
+            a.slider__control(href='#' data-slide='next')
+          .slider_mob.portfolioSliderMobFour
+            .slider__container
+              .slider__wrapper
+                .slider__items
+                  .slider__item
+                    // Контент 1 слайда
+                    .mobImg.mobImgFirst
+                  .slider__item
+                    // Контент 2 слайда
+                    .mobImg.mobImgTwo
+                  .slider__item
+                    // Контент 3 слайда
+                    .mobImg.mobImgThree
+            // Кнопки для перехода к предыдущему и следующему слайду
+            a.slider__control(href='#' data-slide='prev')
+            a.slider__control(href='#' data-slide='next')
+          .slider_mob.portfolioSliderMobFive
+            .slider__container
+              .slider__wrapper
+                .slider__items
+                  .slider__item
+                    // Контент 1 слайда
+                    .mobImg.mobImgFirst
+                  .slider__item
+                    // Контент 2 слайда
+                    .mobImg.mobImgTwo
+                  .slider__item
+                    // Контент 3 слайда
+                    .mobImg.mobImgThree
+            // Кнопки для перехода к предыдущему и следующему слайду
+            a.slider__control(href='#' data-slide='prev')
+            a.slider__control(href='#' data-slide='next')
+          .slider_mob.portfolioSliderMobSix
+            .slider__container
+              .slider__wrapper
+                .slider__items
+                  .slider__item
+                    // Контент 1 слайда
+                    .mobImg.mobImgFirst
+                  .slider__item
+                    // Контент 2 слайда
+                    .mobImg.mobImgTwo
+                  .slider__item
+                    // Контент 3 слайда
+                    .mobImg.mobImgThree
+            // Кнопки для перехода к предыдущему и следующему слайду
+            a.slider__control(href='#' data-slide='prev')
+            a.slider__control(href='#' data-slide='next')
+          .slider_mob.portfolioSliderMobSeven
+            .slider__container
+              .slider__wrapper
+                .slider__items
+                  .slider__item
+                    // Контент 1 слайда
+                    .mobImg.mobImgFirst
+                  .slider__item
+                    // Контент 2 слайда
+                    .mobImg.mobImgTwo
+                  .slider__item
+                    // Контент 3 слайда
+                    .mobImg.mobImgThree
+            // Кнопки для перехода к предыдущему и следующему слайду
+            a.slider__control(href='#' data-slide='prev')
+            a.slider__control(href='#' data-slide='next')
+          .slider.portfolioSliderOne._activeSliderPortfolio
+            .slides 
+              input#radio_1_One(type='radio' name='radio-btnOne')
+              input#radio_2_One(type='radio' name='radio-btnOne')
+              input#radio_3_One(type='radio' name='radio-btnOne')
+              .slide.first
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .navigation-mask 
+                .auto-btn1
+                .auto-btn2
+                .auto-btn3
+            .navigation-manual 
+              label.manual-btn(for="radio_1_One")._activeEllipsePortfolio
+              label.manual-btn(for="radio_2_One")
+              label.manual-btn(for="radio_3_One")
+          .slider.portfolioSliderTwo
+            .slides 
+              input#radio_1_Two(type='radio' name='radio-btnTwo')
+              input#radio_2_Two(type='radio' name='radio-btnTwo')
+              input#radio_3_Two(type='radio' name='radio-btnTwo')
+              .slide.first
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .navigation-mask 
+                .auto-btn1
+                .auto-btn2
+                .auto-btn3
+            .navigation-manual 
+              label.manual-btn(for="radio_1_Two")._activeEllipsePortfolio
+              label.manual-btn(for="radio_2_Two")
+              label.manual-btn(for="radio_3_Two")
+          .slider.portfolioSliderThree
+            .slides 
+              input#radio_1_Three(type='radio' name='radio-btnThree')
+              input#radio_2_Three(type='radio' name='radio-btnThree')
+              input#radio_3_Three(type='radio' name='radio-btnThree')
+              .slide.first
+                .pieceOfSlide.imgThree
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .navigation-mask 
+                .auto-btn1
+                .auto-btn2
+                .auto-btn3
+            .navigation-manual 
+              label.manual-btn(for="radio_1_Three")._activeEllipsePortfolio
+              label.manual-btn(for="radio_2_Three")
+              label.manual-btn(for="radio_3_Three")
+          .slider.portfolioSliderFour
+            .slides 
+              input#radio_1_Four(type='radio' name='radio-btnFour')
+              input#radio_2_Four(type='radio' name='radio-btnFour')
+              input#radio_3_Four(type='radio' name='radio-btnFour')
+              .slide.first
+                .pieceOfSlide.imgThree
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgFirst
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .navigation-mask 
+                .auto-btn1
+                .auto-btn2
+                .auto-btn3
+            .navigation-manual 
+              label.manual-btn(for="radio_1_Four")._activeEllipsePortfolio
+              label.manual-btn(for="radio_2_Four")
+              label.manual-btn(for="radio_3_Four")
+          .slider.portfolioSliderFive
+            .slides 
+              input#radio_1_Five(type='radio' name='radio-btnFive')
+              input#radio_2_Five(type='radio' name='radio-btnFive')
+              input#radio_3_Five(type='radio' name='radio-btnFive')
+              .slide.first
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+                .pieceOfSlide.imgFirst
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .navigation-mask 
+                .auto-btn1
+                .auto-btn2
+                .auto-btn3
+            .navigation-manual 
+              label.manual-btn(for="radio_1_Five")._activeEllipsePortfolio
+              label.manual-btn(for="radio_2_Five")
+              label.manual-btn(for="radio_3_Five")
+          .slider.portfolioSliderSix
+            .slides 
+              input#radio_1_Six(type='radio' name='radio-btnSix')
+              input#radio_2_Six(type='radio' name='radio-btnSix')
+              input#radio_3_Six(type='radio' name='radio-btnSix')
+              .slide.first
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .navigation-mask 
+                .auto-btn1
+                .auto-btn2
+                .auto-btn3
+            .navigation-manual 
+              label.manual-btn(for="radio_1_Six")._activeEllipsePortfolio
+              label.manual-btn(for="radio_2_Six")
+              label.manual-btn(for="radio_3_Six")
+          .slider.portfolioSliderSeven
+            .slides 
+              input#radio_1_Seven(type='radio' name='radio-btnSeven')
+              input#radio_2_Seven(type='radio' name='radio-btnSeven')
+              input#radio_3_Seven(type='radio' name='radio-btnSeven')
+              .slide.first
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .slide 
+                .pieceOfSlide.imgFirst
+                .pieceOfSlide.imgTwo
+                .pieceOfSlide.imgThree
+              .navigation-mask 
+                .auto-btn1
+                .auto-btn2
+                .auto-btn3
+            .navigation-manual 
+              label.manual-btn(for="radio_1_Seven")._activeEllipsePortfolio
+              label.manual-btn(for="radio_2_Seven")
+              label.manual-btn(for="radio_3_Seven")
+    // / секция portfolio
+    
+    // секция pricing
+    section.section-pricing#Pric
+      .container
+        h2.mainHeading Pricing
+        p.mainSubheading Check our Services package
+        .wrapperPricingBlocks
+          .pricingBlock
+            .titlePricingBlock.titlePricingBlockBgFirst
+              h3 Basic
+              span $70
+              p Only PSD Design
+            .contentPricingBlock
+              .wrapperUlPricing
+                ul 
+                  li Graphic Desing
+                  li Web Design
+                  li UI/UX Design 
+                  li HTML & CSS
+                  li SEO Optimize
+                  li Business Develop
+                a(href='' rel='details').colBattomPricingFirst Choose Plan
+          .pricingBlock
+            .titlePricingBlock.titlePricingBlockBgTwo
+              h3 Standard
+              span $100
+              p Only PSD Design
+            .contentPricingBlock
+              .wrapperUlPricing
+                ul 
+                  li Graphic Desing
+                  li Web Design
+                  li UI/UX Design 
+                  li HTML & CSS
+                  li SEO Optimize
+                  li Business Develop
+                a(href='' rel='details').colBattomPricingTwo Choose Plan
+          .pricingBlock
+            .titlePricingBlock.titlePricingBlockBgThree
+              h3 Premium
+              span $150
+              p Only PSD Design
+            .contentPricingBlock
+              .wrapperUlPricing
+                ul 
+                  li Graphic Desing
+                  li Web Design
+                  li UI/UX Design 
+                  li HTML & CSS
+                  li SEO Optimize
+                  li Business Develop
+                a(href='' rel='details').colBattomPricingThree Choose Plan
+    // / секция pricing
+
+    // секция contact
+    section.section-contact#Cont
+      .container 
+        h2.mainHeading Contact us
+        p.mainSubheading Let's Keep In Touch
+        .wrapperFeedbackFormContact
+          h3 Get in Touch
+          form(action="" method="post")
+            input(type="text" name="userName" placeholder="Your Name" required)
+            input(type="email" name="userEmail" placeholder="Your Email Address" required)
+            input(type="text" name="subject" placeholder="Subject" required)
+            input(type="number" step="100" min="0" name="estimatedBudget" placeholder="Estimated Budget" required)
+            textarea(name="message" cols="30" rows="8" placeholder="Enter your Message" required)
+            input(type="submit" name="submit" value="Submit")
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.9539984802104!2d20.579806190112514!3d54.710432473803806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e316829b647e69%3A0xb2bdd890e3cb0f90!2z0YPQuy4g0JrRg9GC0LDQuNGB0YHQutCw0Y8sIDEsINCa0LDQu9C40L3QuNC90LPRgNCw0LQsINCa0LDQu9C40L3QuNC90LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCAyMzYwMDY!5e0!3m2!1sru!2sru!4v1620752326080!5m2!1sru!2sru' width='100%' style='border:0;' allowfullscreen='' loading='lazy')
+    // / секция contact

@@ -1,0 +1,10 @@
+//pug миксины
+mixin article(title, descr)
+  .article
+    h2.article-title= title
+    p.article-descr= descr
+
+//- Рабочий, для элементов в списке шапки
+mixin listItem(href, rel, name)
+  li
+    a(href=href rel=rel)= name 

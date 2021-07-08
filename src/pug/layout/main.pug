@@ -1,0 +1,16 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title #{title}
+    //- title Portfolio White Alexa
+    link(rel='icon' href='favicon.ico' type='image/ico')
+  body(class=pageClass)
+    include ../includes/modules/header
+    block content
+    include ../includes/modules/footer

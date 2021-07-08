@@ -1,0 +1,62 @@
+footer {
+  background-color: $colMain;
+  .container {
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    h3 {
+      @include adaptiv-font(18, 16);
+      font-weight: 600;
+      letter-spacing: 4px;
+      margin: 0 15px;
+    }
+    .wrapperIkonsFooter {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      width: 290px;
+      margin: 0 15px;
+      div {
+        height: 45px;
+        width: 45px;
+        background: $colMTwo;
+        text-align: center;
+        line-height: 2.5;
+        border-radius: 25px;
+      }
+      svg {
+        height: 45px;
+        width: 45px;
+        fill:$colMTwo;
+        transition: .2s;
+        cursor: pointer;
+        &:hover {
+          fill: $colFontMain;
+        }
+      }
+    }
+  }
+  @media (min-width:1200px) {
+    .container {
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+  @media (max-width:833px) {
+    .container {
+      height: 200px;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      h3 {
+        margin-top: 20px;
+      }
+      .wrapperIkonsFooter {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

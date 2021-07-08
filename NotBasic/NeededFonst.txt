@@ -1,0 +1,6 @@
+fonts:
+Poppins SemiBold
+Poppins Regular
+Poppins Bold
+Poppins Medium
+Poppins Black
